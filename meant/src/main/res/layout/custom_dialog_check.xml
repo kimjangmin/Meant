@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail 주소 확인"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/custom1_title" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:text="E-mail Address"
+        android:textColorHint="@color/abc_primary_text_material_dark"
+        android:textColor="@color/black"
+        android:background="@drawable/xml_border"
+        android:gravity="center"
+        android:id="@+id/custom1_input"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  위 메일로 본인확인 인증메일이 발송됩니다. \n  이메일을 잘못 입력하셨다면 취소 버튼을 눌러 수정해주세요."
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/custom1_btn1"
+            android:text="확  인"
+            android:textSize="20dp"
+            android:textColor="@color/book_loading_book"
+            android:layout_marginRight="50dp"
+            android:padding="10dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/custom1_btn2"
+            android:text="취  소"
+            android:textColor="@color/book_loading_book"
+            android:layout_marginRight="30dp"
+            android:padding="10dp"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

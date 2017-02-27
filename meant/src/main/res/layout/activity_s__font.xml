@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/action_all_grad">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:onClick="push_back"
+            android:src="@mipmap/ic_arrow_back"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:text="글자크기"
+            android:textSize="25dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/action_shadow_grad"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|top"
+        android:background="@color/white">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="    보통"
+                android:id="@+id/radioButton1"
+                android:textColor="#909090"
+                android:textSize="15dp"
+                android:button="@drawable/btn_radio_set"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="   크게"
+                android:id="@+id/radioButton2"
+                android:textColor="#909090"
+                android:textSize="20dp"
+                android:button="@drawable/btn_radio_set"
+                android:layout_marginTop="10dp"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="  아주 크게"
+                android:id="@+id/radioButton3"
+                android:textColor="#909090"
+                android:textSize="25dp"
+                android:button="@drawable/btn_radio_set"
+                android:layout_marginTop="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

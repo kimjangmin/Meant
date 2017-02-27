@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#f0f0f0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="@drawable/action_all_grad">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:onClick="push_back"
+                android:src="@mipmap/ic_arrow_back"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:text="설정"
+                android:textSize="25dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/action_shadow_grad"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_profile">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:onClick="push_profile"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="프로필 설정"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_alarm">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:onClick="push_alarm"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="알림 설정"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_font">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:onClick="push_font"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="폰트 설정"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:text="페이스북 계정"
+                    android:textSize="10dp"
+                    android:textColor="#ababab"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_face">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:onClick="push_face"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="페이스북 계정"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_pwd">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:onClick="push_pwd"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="암호 설정"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_agree">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:onClick="push_agree"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="서비스 이용 동의"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_delete">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:onClick="push_delete"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="기록 전체 삭제"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:text="고객지원"
+                    android:textSize="10dp"
+                    android:textColor="#ababab"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_version">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:onClick="push_version"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="버전정보 (1.2.0)"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_help">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:onClick="push_help"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="도움말"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:onClick="push_ques">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:onClick="push_ques"
+                    android:src="@mipmap/ic_setting_right_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="55dp"
+                    android:text="문의하기"
+                    android:textSize="15dp"
+                    android:textColor="#616161"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>

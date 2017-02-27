@@ -1,0 +1,9 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_activity_main_nav_list"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/com_facebook_blue"
+    android:divider="@android:color/black"
+    android:dividerHeight="1dp"/>
+<!-- left_drawer-->

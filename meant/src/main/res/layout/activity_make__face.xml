@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="문의하기나 회원탈퇴 시 이용될 \n이메일 주소를 입력해주세요."
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:background="@drawable/xml_comment_border"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <EditText android:id="@+id/face_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/xml_input_border"
+                android:padding= "5dp"
+                android:hint="계정(이메일)"
+                android:nextFocusDown="@+id/btn_login"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:padding="7dp"
+            android:background="@drawable/xml_btn_border"
+            android:text="확인"
+            android:onClick="go_login"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

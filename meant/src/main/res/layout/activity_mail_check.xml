@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:text="인증 메일이 발송되었습니다."
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="E-mail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/black"
+        android:id="@+id/show_mail"
+        android:padding="5dp"
+        android:background="@drawable/xml_border" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  가입하신 메일주소로 발송된 메일의 인증버튼을 눌러 가입을 완료해주세요."
+        android:textSize="11dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:hint="인증번호입력"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:id="@+id/check_num"
+            android:gravity="center"
+            android:background="@drawable/xml_input_border"
+            android:layout_weight="2" />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/xml_btn_border"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/btn_checkok"
+            android:text="확  인"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:onClick="push_ok"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/warn_msg"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:text="-인증메일이 오지 않을 경우-"
+        android:padding="1dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:text="1.이메일을 올바르게 입력하셨는지 확인해보세요."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:text="2.휴지통, 스팸편지함을 확인해보세요."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:text="3.메일이 도착하기 까지 시간이 걸릴 수 있습니다."/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="인증메일 재발송"
+        android:clickable="true"
+        android:onClick="re_send"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="이메일, 비밀번호 재설정"
+        android:clickable="true"
+        android:onClick="re_set"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:clickable="true"
+        android:text="back"
+        android:onClick="go_back"/>
+
+
+
+
+</LinearLayout>

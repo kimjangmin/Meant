@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.github.florent37.materialviewpager.sample.CommentActivity"
+    android:background="@drawable/comment_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@drawable/action_all_grad">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:onClick="push_back"
+                android:src="@mipmap/ic_arrow_back"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/action_title"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="28"
+        android:orientation="vertical"
+        android:background="@drawable/xml_comment_border"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <Spinner
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/wr1_spin"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_textalign_left_select"
+                    android:layout_margin="3dp"
+                    android:clickable="true"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_textalign_center"
+                    android:layout_margin="3dp"
+                    android:clickable="true"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_textalign_right"
+                    android:layout_margin="3dp"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="다음"
+                    android:onClick="push_next"
+                    android:textColor="@color/white"
+                    android:gravity="right"
+                    android:textSize="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/xml_btn_border"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:gravity="left|top"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text=""
+                android:id="@+id/wr1_edit"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

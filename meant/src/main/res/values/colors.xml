@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#303F9F</color>
+
+    <color name="accent_color">@color/blue</color>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="statusBarColor">@color/blue</color>
+    <color name="navigationBarColor">@android:color/black</color>
+    <color name="drawerArrowColor">@android:color/white</color>
+    <color name="primary">#facaa1</color>
+    <color name="primary_dark">#f19981</color>
+    <color name="primary_darker">#f17848</color>
+    <color name="tab_bar">#f5ab73</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="inputput">#60EDE3E2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="fb_primary">#3678bf</color>
+    <color name="primary_pressed">#253dca</color>
+    <color name="ripple">#060664</color>
+
+</resources>

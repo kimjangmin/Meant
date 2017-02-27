@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/action_all_grad">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:onClick="push_back"
+            android:src="@mipmap/ic_arrow_back"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/imageView3" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:text="문의하기"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전송"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:id="@+id/button3"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/action_shadow_grad"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Spinner
+            android:drawSelectorOnTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:id="@+id/spinner"
+            android:prompt="@string/spinnerlist1"
+            android:textColor="@color/monsoon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/xml_post_boder"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint=" 답변 받을 메일 주소"
+            android:textColorHint="#767676"
+            android:background="@drawable/xml_post_boder"
+            android:textColor="@color/monsoon"
+            android:id="@+id/editText2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/editText"
+            android:textColorHint="#767676"
+            android:textSize="14dp"
+            android:background="@drawable/xml_post_boder"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/monsoon"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView22"
+            android:layout_weight="0.20"
+            android:text="문의하신 내용에 대한 원인파악 및 원활한 상담을 위하여 이메일, 휴대폰번호로를 수집합니다. 수집된 개인정보는 개인정보의 수집및 이용 목적이 달성되면 관련 법령 또는 회사 내부 방침에 의해 보존할 필요거 있는 경우를 제외하고는 지체 없이 파기됩니다.   더 자세한 내용에 대해서는 회사 개인정보 취급방침을 참고하시기 바랍니다."
+            android:textSize="10dp"
+            android:textColor="@color/monsoon"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </LinearLayout>
+    <include layout="@layout/drawer" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Like 취소"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Like를 취소하면 목록에서 사라지게 됩니다.\n취소하시겠습니까?"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/dia_heart_yes"
+            android:text="확    인"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/xml_input_border"
+            android:layout_margin="10dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/dia_heart_no"
+            android:text="아  니  오"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/xml_input_border"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

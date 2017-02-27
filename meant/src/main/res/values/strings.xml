@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Meant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mail_check">Mail_check</string>
+    <string name="facebook_app_id">1536902993290496</string>
+    <string name="title_activity_login_dir">Login_dir</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="start">Start</string>
+    <string name="title_activity_comment">CommentActivity</string>
+    <string name="back">back</string>
+    <string name="exit">exit</string>
+    <string name="spinnerlist1">문의하기</string>
+    <string name="spinnerlist2">도움말</string>
+    <string name="autocomplete_hint">Search a Place</string>
+</resources>
